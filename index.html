@@ -144,7 +144,7 @@
       margin-top: 1.8rem;
       font-size: 1rem;
       color: var(--muted);
-      max-width: 420px;
+      max-width: 460px;
       opacity: 0;
       animation: fadeUp 0.8s 0.6s forwards;
     }
@@ -220,10 +220,10 @@
     .stat-card:hover { border-color: var(--accent); }
     .stat-number {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.9rem;
+      font-size: 1.7rem;
       font-weight: 600;
       color: var(--accent);
-      line-height: 1;
+      line-height: 1.1;
     }
     .stat-label { font-size: 0.68rem; letter-spacing: 0.08em; color: var(--muted); text-transform: uppercase; margin-top: 0.4rem; }
 
@@ -282,6 +282,11 @@
     .project-body { padding: 0 1.4rem 1.4rem; }
     .project-title { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 600; color: var(--white); margin-bottom: 0.5rem; }
     .project-desc { font-size: 0.83rem; color: var(--muted); line-height: 1.7; margin-bottom: 1rem; }
+    .project-coming {
+      border-style: dashed;
+      opacity: 0.5;
+    }
+    .project-coming:hover { opacity: 0.8; }
 
     /* ─── Contact ─── */
     #contact { text-align: center; padding: 6rem 4rem; position: relative; overflow: hidden; }
@@ -368,9 +373,13 @@
   <!-- HERO -->
   <section id="hero">
     <div class="hero-glow"></div>
-    <p class="hero-eyebrow">Desarrollador de Software · México</p>
+    <p class="hero-eyebrow">Ingeniero en Sistemas Computacionales · Estado de México</p>
     <h1 class="hero-name">Enrique<br><em>Lima</em> Rivera</h1>
-    <p class="hero-subtitle">Estudiante de desarrollo de software enfocado en construir soluciones limpias y bien estructuradas con Java y tecnologías web.</p>
+    <p class="hero-subtitle">
+      Ingeniero en Sistemas Computacionales buscando oportunidades en
+      <strong style="color:var(--text); font-weight:400;">Desarrollo Backend / Fullstack</strong>.
+      Apasionado por construir soluciones robustas y bien estructuradas.
+    </p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">Ver proyectos</a>
       <a href="#contact" class="btn btn-ghost">Contacto</a>
@@ -383,15 +392,26 @@
     <h2>Hola, soy <em>Enrique</em></h2>
     <div class="about-grid">
       <div class="about-text">
-        <p>Soy estudiante de <strong>Desarrollo de Software</strong> con interés en crear aplicaciones bien diseñadas y mantenibles. Me enfoco en aprender los fundamentos sólidos que permitan construir sistemas escalables.</p>
-        <p>Actualmente profundizando en <strong>programación orientada a objetos con Java</strong> y expandiendo mis conocimientos hacia el desarrollo web.</p>
-        <p>Busco oportunidades para colaborar en proyectos reales y seguir creciendo como desarrollador.</p>
+        <p>
+          Soy <strong>Ingeniero en Sistemas Computacionales</strong> con enfoque en el
+          desarrollo backend y fullstack. Me apasiona crear aplicaciones bien estructuradas,
+          eficientes y fáciles de mantener.
+        </p>
+        <p>
+          Trabajo con tecnologías como <strong>Java, PHP, HTML5, CSS3</strong> y bases de datos
+          relacionales como <strong>MySQL y SQL Server</strong>. Siempre buscando aprender
+          nuevas herramientas y buenas prácticas.
+        </p>
+        <p>
+          Estoy en busca de oportunidades profesionales donde pueda contribuir,
+          crecer y aportar valor real a un equipo de desarrollo.
+        </p>
       </div>
       <div class="about-stats">
-        <div class="stat-card"><div class="stat-number">Java</div><div class="stat-label">Principal</div></div>
-        <div class="stat-card"><div class="stat-number">OOP</div><div class="stat-label">Paradigma</div></div>
-        <div class="stat-card"><div class="stat-number">MX</div><div class="stat-label">México</div></div>
-        <div class="stat-card"><div class="stat-number">2025</div><div class="stat-label">En formación</div></div>
+        <div class="stat-card"><div class="stat-number">Backend</div><div class="stat-label">Enfoque</div></div>
+        <div class="stat-card"><div class="stat-number">ISC</div><div class="stat-label">Ingeniería</div></div>
+        <div class="stat-card"><div class="stat-number">Edomex</div><div class="stat-label">Ubicación</div></div>
+        <div class="stat-card"><div class="stat-number">Open</div><div class="stat-label">A oportunidades</div></div>
       </div>
     </div>
   </section>
@@ -399,44 +419,51 @@
   <!-- SKILLS -->
   <section id="skills">
     <div class="section-label">02 — Habilidades</div>
-    <h2>Lo que <em>sé hacer</em></h2>
+    <h2>Tecnologías y <em>herramientas</em></h2>
     <div class="skills-grid">
+
       <div class="skill-card reveal">
         <div class="skill-icon">☕</div>
         <div class="skill-title">Java</div>
-        <div class="skill-desc">POO, clases, herencia, encapsulamiento y colecciones.</div>
+        <div class="skill-desc">Programación orientada a objetos, estructuras de datos y lógica de negocio.</div>
         <div class="skill-tags"><span class="tag">POO</span><span class="tag">Clases</span><span class="tag">Herencia</span></div>
       </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">🐘</div>
+        <div class="skill-title">PHP</div>
+        <div class="skill-desc">Desarrollo de aplicaciones web del lado del servidor y APIs básicas.</div>
+        <div class="skill-tags"><span class="tag">Backend</span><span class="tag">Web</span></div>
+      </div>
+
       <div class="skill-card reveal">
         <div class="skill-icon">🌐</div>
-        <div class="skill-title">Web</div>
-        <div class="skill-desc">Páginas con HTML semántico, CSS y JavaScript.</div>
-        <div class="skill-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        <div class="skill-title">HTML5 & CSS3</div>
+        <div class="skill-desc">Maquetación semántica y estilos modernos para interfaces web.</div>
+        <div class="skill-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Frontend</span></div>
       </div>
+
       <div class="skill-card reveal">
         <div class="skill-icon">🗄️</div>
         <div class="skill-title">Bases de Datos</div>
-        <div class="skill-desc">Diseño de tablas y consultas relacionales con SQL.</div>
-        <div class="skill-tags"><span class="tag">SQL</span><span class="tag">MySQL</span></div>
+        <div class="skill-desc">Diseño de esquemas, consultas relacionales y administración con phpMyAdmin.</div>
+        <div class="skill-tags"><span class="tag">MySQL</span><span class="tag">SQL Server</span><span class="tag">phpMyAdmin</span></div>
       </div>
+
       <div class="skill-card reveal">
         <div class="skill-icon">🔧</div>
         <div class="skill-title">Herramientas</div>
-        <div class="skill-desc">Control de versiones y entornos de desarrollo.</div>
-        <div class="skill-tags"><span class="tag">Git</span><span class="tag">VS Code</span><span class="tag">IntelliJ</span></div>
+        <div class="skill-desc">Control de versiones y entornos de desarrollo profesionales.</div>
+        <div class="skill-tags"><span class="tag">Git</span><span class="tag">VS Code</span><span class="tag">IntelliJ</span><span class="tag">NetBeans</span></div>
       </div>
+
       <div class="skill-card reveal">
-        <div class="skill-icon">🧩</div>
-        <div class="skill-title">Algoritmos</div>
-        <div class="skill-desc">Resolución de problemas y estructuras de datos básicas.</div>
-        <div class="skill-tags"><span class="tag">Arrays</span><span class="tag">Listas</span><span class="tag">Lógica</span></div>
+        <div class="skill-icon">🚀</div>
+        <div class="skill-title">En crecimiento</div>
+        <div class="skill-desc">Expandiendo conocimientos hacia APIs REST, patrones de diseño y arquitectura de software.</div>
+        <div class="skill-tags"><span class="tag">REST</span><span class="tag">Patrones</span><span class="tag">Fullstack</span></div>
       </div>
-      <div class="skill-card reveal">
-        <div class="skill-icon">📐</div>
-        <div class="skill-title">En aprendizaje</div>
-        <div class="skill-desc">APIs REST y patrones de diseño de software.</div>
-        <div class="skill-tags"><span class="tag">REST</span><span class="tag">Patrones</span></div>
-      </div>
+
     </div>
   </section>
 
@@ -445,50 +472,55 @@
     <div class="section-label">03 — Proyectos</div>
     <h2>Mi <em>trabajo</em></h2>
     <div class="projects-grid">
+
       <div class="project-card reveal">
         <div class="project-header">
           <div class="project-number">01</div>
           <a href="https://github.com/EnriqueLimaRIvera" target="_blank" class="project-link">↗</a>
         </div>
         <div class="project-body">
-          <div class="project-title">Sistema de Gestión</div>
-          <p class="project-desc">Aplicación en Java que aplica POO: clases, herencia, encapsulamiento y polimorfismo para administrar datos de forma estructurada.</p>
-          <div class="skill-tags"><span class="tag">Java</span><span class="tag">POO</span><span class="tag">Consola</span></div>
+          <div class="project-title">Portafolio Web</div>
+          <p class="project-desc">Este mismo sitio, construido desde cero con HTML, CSS y JavaScript puro. Publicado en GitHub Pages.</p>
+          <div class="skill-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">GitHub Pages</span></div>
         </div>
       </div>
-      <div class="project-card reveal">
+
+      <div class="project-card reveal project-coming">
         <div class="project-header">
           <div class="project-number">02</div>
           <a href="https://github.com/EnriqueLimaRIvera" target="_blank" class="project-link">↗</a>
         </div>
         <div class="project-body">
-          <div class="project-title">Portafolio Web</div>
-          <p class="project-desc">Este mismo sitio, construido desde cero con HTML, CSS y JavaScript puro. Desplegado en GitHub Pages.</p>
-          <div class="skill-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">GitHub Pages</span></div>
+          <div class="project-title">Próximamente</div>
+          <p class="project-desc">Agrega aquí tu siguiente proyecto cuando esté listo en GitHub. Puede ser una app en Java, PHP o cualquier práctica.</p>
+          <div class="skill-tags"><span class="tag">En progreso</span></div>
         </div>
       </div>
-      <div class="project-card reveal">
+
+      <div class="project-card reveal project-coming">
         <div class="project-header">
           <div class="project-number">03</div>
           <a href="https://github.com/EnriqueLimaRIvera" target="_blank" class="project-link">↗</a>
         </div>
         <div class="project-body">
           <div class="project-title">Próximamente</div>
-          <p class="project-desc">Nuevo proyecto en desarrollo. Agrega aquí tu siguiente práctica o aplicación cuando esté lista.</p>
+          <p class="project-desc">Espacio para un proyecto con base de datos. Por ejemplo: sistema con MySQL o SQL Server conectado desde Java o PHP.</p>
           <div class="skill-tags"><span class="tag">En progreso</span></div>
         </div>
       </div>
-      <div class="project-card reveal">
+
+      <div class="project-card reveal project-coming">
         <div class="project-header">
           <div class="project-number">04</div>
           <a href="https://github.com/EnriqueLimaRIvera" target="_blank" class="project-link">↗</a>
         </div>
         <div class="project-body">
           <div class="project-title">Próximamente</div>
-          <p class="project-desc">Espacio para tu siguiente proyecto. Cada práctica cuenta como experiencia real.</p>
+          <p class="project-desc">Cuarto espacio reservado. Cada proyecto que subas a GitHub puede aparecer aquí con su descripción y tecnologías.</p>
           <div class="skill-tags"><span class="tag">En progreso</span></div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -522,7 +554,7 @@
   <!-- FOOTER -->
   <footer>
     <span>© 2025 Enrique Lima Rivera</span>
-    <span>México 🇲🇽</span>
+    <span>Ingeniero en Sistemas Computacionales 🇲🇽</span>
   </footer>
 
   <script>
